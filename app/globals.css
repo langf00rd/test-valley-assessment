@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+   @apply text-textPrimary;
+}
+
+.embla__container {
+   backface-visibility: hidden;
+}
+
+.max-lines-2 {
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 2;
+   line-clamp: 2;
+   -webkit-box-orient: vertical;
+}
+.mask-border {
+   -webkit-mask: linear-gradient(90deg, transparent, white 1%, white 99%, transparent);
+   mask: linear-gradient(90deg, transparent, white 1%, white 99%, transparent);
+}
+.embla__class-names {
+   transition: opacity 0.2s ease-in-out;
+}
+.embla__class-names:not(.is-snapped) {
+   opacity: 0.16;
+}
